@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe Puertos::Parser do
-  let(:subject) { Puertos::Parser.new }
+describe Puertos do
+  let(:subject) { Puertos }
 
   describe '#run' do
-    let(:forecast) { subject.run }
+    let(:forecast) { subject.fetch }
 
     it 'returns an array' do
       expect(forecast).to be_an Array
