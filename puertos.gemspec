@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Puertos::VERSION
   spec.authors       = ["rgalindo33"]
   spec.email         = ["rgalindo33@hotmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Forecast swell information for Barcelona}
+  spec.description   = %q{returns ruby objects with meaningfull swell data}
+  spec.homepage      = "https://github.com/rgalindo33/puertos"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

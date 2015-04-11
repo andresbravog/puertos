@@ -1,6 +1,6 @@
 # Puertos
 
-TODO: Write a gem description
+simple ruby gem that fetches the forecast swell data for Barcelona from Puertos del Estado
 
 ## Installation
 
@@ -18,12 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Make sure you require the gem before:
+
+    require 'puertos'
+
+and then there is the one and only command available
+
+    Puertos.fetch
+
+returns the swell and wind data for the next 72 hours
+
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/puertos/fork )
+1. Fork it ( https://github.com/[my-github-username]/pont_del_petroli/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+5. Create a new Pull Request
