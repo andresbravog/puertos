@@ -4,6 +4,8 @@ simple ruby gem that fetches the forecast swell data for Barcelona from Puertos 
 
 [![Gem Version](https://badge.fury.io/rb/puertos.svg)](http://badge.fury.io/rb/puertos)
 [![Build Status](https://travis-ci.org/rgalindo33/puertos.svg?branch=master)](https://travis-ci.org/rgalindo33/puertos)
+[![Code Climate](https://codeclimate.com/github/rgalindo33/puertos/badges/gpa.svg)](https://codeclimate.com/github/rgalindo33/puertos)
+[![Test Coverage](https://codeclimate.com/github/rgalindo33/puertos/badges/coverage.svg)](https://codeclimate.com/github/rgalindo33/puertos)
 
 ## Installation
 
