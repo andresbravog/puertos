@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 group :test do
   gem 'rspec'
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :development do
@@ -10,5 +11,4 @@ group :development do
   gem 'pry'
 end
 
-# Specify your gem's dependencies in puertos.gemspec
 gemspec
