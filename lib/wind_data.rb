@@ -1,9 +1,11 @@
 module Puertos
   class WindData
-    #remove after upgrading to ruby 2.1
-    def initialize(speed: 1, direction: 'e')
+    attr_reader :speed, :direction, :unit
+
+    def initialize(speed: nil, direction: nil, unit: 'm/s')
       @speed     = speed
       @direction = direction
+      @unit      = unit
     end
   end
 end
