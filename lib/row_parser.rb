@@ -11,17 +11,21 @@ module Puertos
     end
 
     def run
-      timestamp      = read_column(1)
+      timestamp      = create_timestamp
       wind           = create_wind_data
       total_swell    = create_total_swell_data
       wind_swell     = create_wind_swell_data
       ground_swell_1 = create_ground_swell_data_1
       ground_swell_2 = create_ground_swell_data_2
 
-      ForecastData.new wind, total_swell, wind_swell, ground_swell_1, ground_swell_2
+      ForecastData.new timestamp, wind, total_swell, wind_swell, ground_swell_1, ground_swell_2
     end
 
   private
+
+    def create_timestamp
+      Time.parse read_column(1)
+    end
 
     def create_wind_data
       Puertos::WindData.new speed: read_column(4), direction: read_column(5)
@@ -48,6 +52,6 @@ module Puertos
     end
   end
 
-  class ForecastData < Struct.new :wind, :total_swell, :wind_swell, :ground_swell_1, :ground_swell_2
+  class ForecastData < Struct.new :timestamp, :wind, :total_swell, :wind_swell, :ground_swell_1, :ground_swell_2
   end
 end
