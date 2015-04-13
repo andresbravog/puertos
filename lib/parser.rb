@@ -4,9 +4,14 @@ require 'nokogiri'
 
 module Puertos
   class Parser
+    #@private
     DATA_URL = 'http://static.puertos.es/pred_simplificada/Predolas/Tablas/Med/BAR.html'
+    #@private
     CSS_ROWS_SELECTOR = 'center center table tr'
 
+    # uses the row parser to parse line by line the forecast table
+    #
+    # @return [Array] Array of ForecastData with all the relevant information
     def run
       rows = Nokogiri::HTML(open(DATA_URL)).css CSS_ROWS_SELECTOR
 

@@ -2,14 +2,18 @@ require "wind_data"
 require "swell_data"
 
 module Puertos
+  # The Parser is responsible of fetching the data from Puertos del Estado
+  # and return it as ruby objects
   class RowParser
-
     attr_reader :row
 
     def initialize row
       @row = row
     end
 
+    # parses each input line and returns a ForecastData object
+    #
+    # @return [ForecastData] with all the relevant information
     def run
       timestamp      = create_timestamp
       wind           = create_wind_data
