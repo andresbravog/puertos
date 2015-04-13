@@ -5,7 +5,7 @@ module Puertos
   class RowParser
 
     attr_reader :row
-    
+
     def initialize row
       @row = row
     end
@@ -24,27 +24,27 @@ module Puertos
   private
 
     def create_wind_data
-      Puertos::WindData.new speed: read_column(5), direction: read_column(6)
+      Puertos::WindData.new speed: read_column(4), direction: read_column(5)
     end
 
     def create_total_swell_data
-      Puertos::SwellData.new height: read_column(7), direction: read_column(8), avg_period: read_column(10), peak_period: read_column(9)
+      Puertos::SwellData.new height: read_column(6), direction: read_column(7), avg_period: read_column(9), peak_period: read_column(8)
     end
 
     def create_wind_swell_data
-      Puertos::SwellData.new height: read_column(11), direction: read_column(12)
+      Puertos::SwellData.new height: read_column(10), direction: read_column(11)
     end
 
     def create_ground_swell_data_1
-      Puertos::SwellData.new height: read_column(13), direction: read_column(14), avg_period: read_column(15)
+      Puertos::SwellData.new height: read_column(12), direction: read_column(13), avg_period: read_column(14)
     end
 
     def create_ground_swell_data_2
-      Puertos::SwellData.new height: read_column(16), direction: read_column(17), avg_period: read_column(18)
+      Puertos::SwellData.new height: read_column(15), direction: read_column(16), avg_period: read_column(17)
     end
 
     def read_column number
-      row.css("td:nth-child(#{number})").text
+      row.css("td:nth-child(#{number})").text.strip
     end
   end
 
