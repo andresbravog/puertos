@@ -3,6 +3,7 @@
 simple ruby gem that fetches the forecast swell data for Barcelona from Puertos del Estado
 
 [![Gem Version](https://badge.fury.io/rb/puertos.svg)](http://badge.fury.io/rb/puertos)
+[![Build Status](https://travis-ci.org/rgalindo33/puertos.svg?branch=master)](https://travis-ci.org/rgalindo33/puertos)
 
 ## Installation
 
