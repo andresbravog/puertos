@@ -6,10 +6,10 @@ require 'puertos/version'
 Gem::Specification.new do |spec|
   spec.name          = "puertos"
   spec.version       = Puertos::VERSION
-  spec.authors       = ["rgalindo33"]
+  spec.authors       = ["Raul Galindo"]
   spec.email         = ["rgalindo33@hotmail.com"]
   spec.summary       = %q{Forecast swell information for Barcelona}
-  spec.description   = %q{returns ruby objects with meaningfull swell data}
+  spec.description   = %q{simple ruby gem that fetches the forecast swell data for Barcelona from Puertos del Estado}
   spec.homepage      = "https://github.com/rgalindo33/puertos"
   spec.license       = "MIT"
 
