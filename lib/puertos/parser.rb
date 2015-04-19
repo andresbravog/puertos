@@ -1,4 +1,3 @@
-require 'row_parser'
 require 'open-uri'
 require 'nokogiri'
 

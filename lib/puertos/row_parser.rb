@@ -1,6 +1,3 @@
-require "wind_data"
-require "swell_data"
-
 module Puertos
   # The Parser is responsible of fetching the data from Puertos del Estado
   # and return it as ruby objects
